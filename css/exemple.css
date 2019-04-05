@@ -1,0 +1,698 @@
+nav{
+    width: 99%;
+    background-color: rgba(95, 0, 255, 0.2);/*a: pour oppacité*/
+    color:white;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+}
+
+nav ul{
+    overflow: hidden;/*pour retablir la hauteur du ul, car le float li collapse l'élément parent*/
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    float: left;
+    list-style-type: none;
+}
+nav a{
+    padding:10px 15px;
+    display: inline-block;
+}
+nav li:hover{
+    background-color: rgba(228, 26, 211, 0.5);
+    border-top: 5px solid white;
+}
+    
+nav li:hover a{
+    padding: 5px 15px 10px 15px;
+}
+
+/* ------button------ */
+#buttonup{
+    position: fixed;
+    right: 40px;
+    top:50%;
+    font-size: 50px;
+    z-index: 10;
+}
+#buttonup:hover{
+    color:gray;
+
+}
+h2,h3,h4{
+    margin-top: 50px;
+}
+
+h1, h2{
+    text-align: center;
+    color: white;
+}
+h3,h4{
+    text-align: center;
+}
+h1:hover{/*au passage de la souris*/
+    color: gray;
+}
+h1{
+    padding-top:60px;/*pour éviter que le boutton scrolling fasse cacher le h1 par la nav*/
+}
+
+p a[id="siteskate"]:link{
+    color:gray;
+}
+
+p a[id="siteskate"]:visited{
+    color:orange;
+}
+
+.speudoelement p::first-letter{
+    color:purple;
+    font-size: 20px;
+}
+
+.speudoelement p::first-line{
+    background: yellowgreen;
+}
+
+.speudoelement1 p::-moz-selection{
+    background: yellowgreen;
+}
+
+.speudoelement1{
+    border: 1px solid black;
+}
+
+.speudoelement1::before{
+    content: "du texte ajouter avec ::before";
+}
+
+.speudoelement1::after{
+    content: url(../img/gow.gif);
+}
+
+#uppercase{
+    text-transform: uppercase;
+}
+#underline{
+    text-decoration: underline;
+}
+#shadow{
+    text-shadow: 10px 6px 2px black;
+}
+#shadowi{
+    text-shadow: -10px -6px 2px black;
+}
+
+#textindent{
+    text-indent: 250px;
+}
+#lineheight{
+    line-height: 45px;
+}
+#letterspacing{
+    letter-spacing: 20px;
+}
+
+mark{
+    background-color: #4bef95;
+}
+#listeessai{
+    list-style-type: katakana;
+}
+
+
+/* -------liens------------ */
+
+a:link{/*couleur du lien*/
+    color: white;
+    text-decoration: none;
+}
+a:visited{/*page visité*/
+    color: white;
+}
+/* ------------Zoning-------- */
+
+.inline{
+    display: inline;
+    border: 1px solid black;
+}
+
+.inlineblock{
+    display: inline-block;/*none pour ne pas l'afficher*/
+    border: 1px solid black;
+    width:40%;
+}
+
+.div1{
+    height: 410px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+    box-shadow: 0px 0px 15px black;
+}
+
+
+#pimg{
+    display: inline-block;
+    width: 11%;
+    text-align: left;
+    margin-top: 200px;
+    padding-left: 10px;
+}
+
+#img{
+    position: absolute;
+    left: 150px;
+    border-radius: 5%;
+} 
+
+.boite1{
+    position: absolute;
+    right:200px;
+    top: 100px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5%;
+    font-size: 15px;
+    color:gray;
+    text-align: center;
+    box-shadow:0px 0px 60px aqua inset;/*inset pour intérieur*/
+    color: pink;
+}
+
+.div2{
+    height: 420px;
+    width: 100%;
+    background-color: green;
+    box-shadow: 0px 0px 15px yellow;
+    margin-top: 50px;
+}
+
+#pimg2{
+    float:left;
+    margin:10px;
+}
+
+#img2{
+    float:left;
+    left: 100px;
+    border-radius: 5%;
+    margin-left:10px;
+    border:5px solid orange;
+}
+.boite2{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px white inset;
+    float:left;
+    margin:10px;
+    overflow: scroll;
+}
+
+.backgroundfixe{
+    margin: 50px auto;
+    border: 1px solid whitesmoke;
+    height: 500px;
+    width: 70%;
+    background-image: url(../img/battlefront.jpg);
+    background-size: 50%;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;/*permet de fixer l'image a son emplacement d'origine*/
+}
+
+.backgroundposition{
+    margin: 50px auto;
+    border: 1px solid whitesmoke;
+    height: 500px;
+    width: 70%;
+    background-image: url(../img/battlefront.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.backgroundmany{
+    margin: 50px auto;
+    border: 1px solid whitesmoke;
+    height: 500px;
+    width: 70%;
+    background-image: url(../img/battlefront.jpg), url(../img/moon.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+#imgcountry{
+    margin: 50px auto;
+    display: block;
+    border: 5px inset greenyellow;
+    box-shadow: 0 0 10px white;
+    
+
+}
+
+.divfloat{
+    height: 514px;
+    margin-top: 50px;
+}
+
+.violet, .vert{
+    height: 10em;
+    width: 10em;
+    border: 0.2em solid;
+    margin: 0.2em;
+    float: left;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.violet{
+    background-color: #7a43e0;
+}
+
+.vert{
+    background-color: #43e07a;
+}
+
+.clear{
+    clear: left/*ou both dans ce cas-ci*/
+}
+
+
+.flex{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex1, .flex2, .flex3{
+    height:100%;
+    
+}
+.flex1{
+    background-color: aqua;
+    width: 30%;
+}
+.flex2{
+    background-color: #b34bef;
+    width: 25%;
+}
+.flex3{
+    background-color: #4bef95;
+    width: 25%;
+}
+
+.para{
+    height: 300px;
+    width: 1000px;
+    box-shadow: 0px 0px 15px gray inset;
+    margin: 20px auto ;
+    background-color: rgb(204, 0, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+.pl{
+    width:13%;
+    height: 100%;
+    margin-top: 13px;
+}
+
+.backgroundd{
+    clear: both;/*pour reset les effet du float du dessus*/
+    width: 1024px;
+    height:771px;
+    box-shadow: 0 0 15px aqua;
+    margin: 50px auto;
+    background-color:white;
+    box-shadow: 0 0 15px aqua;
+    position: relative;
+    
+}
+.zdh{
+    width: 1024px;
+    height:50px;
+    background-color:cyan;
+}
+.mnu{
+    width: 1024;
+    height:20px;
+    background-color:rgb(20, 221, 111);
+}
+.ftr{
+    position: absolute;
+    bottom:0px; 
+    width: 1024px;
+    height: 30px;
+    background-color: rgba(235, 38, 225, 0.479);
+}
+.sprits{
+    width: 1004px;
+    height:651px;
+    
+    position: relative;
+    margin:10px auto;
+    
+}
+.hg,.hd,.bg,.bd{
+    width:502px;
+    height:325.5px;
+    float: left;
+}
+
+.hd{
+    background-image: url(../img/fond.jpg);
+    background-position:502px 0px; 
+}
+.bg{
+    background-image: url(../img/fond.jpg);
+    background-position:1004px 325.5px;
+}
+.bd{
+    background-image: url(../img/fond.jpg);
+    background-position: 502px 325.5px;
+}
+.rondimg{
+    width: 502px;
+    height:325.5px;
+    background-image: url(../img/fond.jpg);
+    background-position: 1004px 0px;
+    transition: width 2s, height 2s;
+}
+.rondimg:hover{
+    width: 60%;
+    height: 60%;
+    margin: 60px auto;
+    transform: rotate(-360deg);
+    transition: 2s;
+    box-shadow: 0px 0px 40px aqua; 
+}
+.rond{
+    width:100%;
+    height: 100%;
+    background: #4bef95;
+    display: block;
+    transition: width 2s, height 2s;
+}
+.rond:hover,.rond1:hover,.rond2:hover{
+    width: 60%;
+    height: 60%;
+    margin: 70px auto;
+    transform: rotate(-360deg);
+    transition: 1s;
+    background-image:url(../img/gow.gif);
+    box-shadow: 0px 0px 20px aqua;
+}
+.rond1{
+    width:100%;
+    height: 100%;
+    background: #186192;
+    transition: width 2s, height 2s;
+}
+.rond2{
+    width:100%;
+    height: 100%;
+    background: #b34bef;
+    transition: width 2s, height 2s;
+}
+
+/* ----Tableau---- */
+
+.lignetableau{
+    height: 230px;
+    margin-top: 50px;
+}
+
+#premier{
+    border-collapse:collapse;
+    border: 1px solid rgb(0, 0, 0);
+    width: 30%;
+    height:230px;
+    text-align: center;
+    float: left;
+    position: relative;
+    left: 200px;
+}
+
+#premier th{
+    border-bottom: 1px solid black;
+}
+
+#premier tr:nth-child(odd){ /*pour choisir l'élément ciblé, la valeur peut être un nombre ou "odd" pour impair et "even" pour pair*/
+    background-color: aqua;
+}
+
+#premier tr:nth-child(even){
+    background-color: pink;
+}
+
+#premier tr td:nth-child(2){
+    background-color: peru;
+}
+
+#tdred td:last-child{
+    background-color: red;
+
+}
+
+#deuxieme{
+    border-collapse:collapse;
+    border: 1px solid rgb(0, 0, 0);
+    width: 30%;
+    height:230px;
+    text-align: center;
+    float: right;
+    position: relative;
+    right: 200px;
+}
+
+#deuxieme th{
+    border-bottom: 1px solid black;
+}
+
+#deuxieme td{
+    border: 1px solid black;
+}
+
+#deuxieme thead, tfoot{
+    background-color: aqua;
+    font-weight: bolder;
+    color: gray;
+}
+
+#troisieme{
+    border-collapse:collapse;
+    border: 1px solid rgb(0, 0, 0);
+    width: 30%;
+    height:230px;
+    text-align: center;
+    clear: both;
+    margin: 50px auto;
+}
+
+#troisieme th{
+    border: 1px solid white;
+}
+
+#troisieme td{
+    border: 1px solid white;
+}
+
+#quatrieme{
+    border-collapse:collapse;
+    border: 1px solid rgb(0, 0, 0);
+    width: 30%;
+    height:230px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#quatrieme th{
+    border: 1px solid white;
+}
+
+#quatrieme td{
+    border: 1px solid white;
+}
+
+/* ----------Médias-------- */
+
+#h2clear{
+    clear: both;
+    margin-top: 50px;
+}
+.media{
+    
+    position: relative;
+    height: 643px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: gray;
+    box-shadow: 0px 0px 15px white;
+}
+audio{
+    margin-top:60px;
+    margin-left: 251.6px;
+    box-shadow:0 0 20px black;
+    border-radius: 5px;
+    width: 1000px;
+    box-shadow: 0px 0px 15px aqua;
+}
+video{
+    position: absolute;
+    height: 427.67;
+    width: 50%;
+    top: 150px;
+    left: 379.8px;
+    box-shadow: 0px 0px 15px aqua;
+   
+    
+}
+.media [controls]{/*selecteur d'attribut*/
+    border: 1px solid yellow;
+}
+
+/* --------Transitions-------- */
+
+.transition{
+    height: 200px;
+    width: 500px;
+    background-color: aqua;
+}
+.transition:hover{
+    width:800px;
+    background-color:rgb(195, 0, 255);
+    transition: width 2s, background-color 2s;/*-moz- pour forcer la comptabilité avec mozilla*/
+    
+}
+/* --------Animations--------- */
+
+.animation{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    background-color: rgb(204, 0, 255);
+    -moz-animation-name: coco;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function:ease;
+    -moz-animation-delay:1s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:alternate;
+
+    animation-name: coco;
+    animation-duration: 5s;
+    animation-timing-function:ease;
+    animation-delay:1s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+   
+}
+@keyframes coco{
+    0%{background-color:rgb(204, 0, 255);top:0px;left:0px;}
+    10%{background-color:rgb(15, 1, 19);top:0px; left:250px;}
+    20%{ background-color: gray; top:250px; left:250px;}
+    30%{background-color:rgb(0, 255, 13);top:250px;left:0px;}
+    40%{background-color:rgb(255, 0, 191);top:0px;left:0px;}
+    50%{background-color:rgb(255, 255, 255);top:0px;left:500px;}
+    60%{background-color:rgb(255, 0, 55);top:100px;left:500px}
+    70%{background-color:rgba(0, 255, 234, 0.384);top:160px;left:1200px}
+    80%{background-color:rgb(229, 255, 0);top:0px;left:860px}
+    90%{background-color:rgb(0, 255, 149);top:50px;left:180px}
+    100%{background-color:rgb(204, 0, 255);top:0px;left:0px;}
+}
+.degrade{
+    height:700px;
+    width: 1000px;
+    border:3px solid white;
+    border-radius: 10%;
+    box-shadow: 20px 20px 60px white inset;
+    background: linear-gradient(to top left,aqua,orange,purple, aqua,blue);
+    margin:50px auto 0; 
+} 
+/* -----------Formulaires---------- */
+form{
+    width: 500px;
+    height: 750px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 60px aqua;
+   
+}
+label{
+    width: 50%;
+    display: inline-block;
+}
+input :first-child(7){
+    width:150px;
+}
+
+/* Responsive */
+
+
+@media screen and (max-width:770px){
+    body{
+    background-color: green;
+    }
+}
+@media screen and (min-width:771px) and (max-width:1200px){
+    body{
+    background-color: purple;
+    }
+}
+@media screen and (min-width:1201px){
+    body{
+    background: linear-gradient(to top right,yellow,orange,red,purple);
+    }
+}
+
+.divq1, .divq2, .divq3{
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    margin: 1%;
+}
+
+.divq1{
+    background-color: aqua;
+}
+
+.divq2{
+    background-color:red
+}
+
+.divq3{
+    background-color:palevioletred
+}
+
+.divq4{
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+}
+
+@media screen and (max-width:780px){
+    .divq1,.divq2,.divq3{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:780px){
+    .divq4{
+        display:none;
+    }
+}
+
+iframe{
+    display: block;
+    margin:auto;
+}
+

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--Pour intégrer des icones ou polices du net toujours mettre les liens des sites concernés dans la partie head, idem pour les scripts-->
+
+    <meta charset="UTF-8">
+    <!--encodage de la page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/exemple.css">
+    <title>Exemple</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- <script>
+        alert('premier script! hihi');
+    </script> -->
+</head>
+
+<body>
+    <!-- c'est un élément (*contenu dans la balise html)-->
+    <nav>
+        <ul style="width:615px;margin:auto">
+            <li><a href="#zoning">ZONING</a></li>
+            <!--a est la balise, href est l'attribut (attribut="")-->
+            <li><a href="#media">MEDIAS</a></li>
+            <li><a href="#transition">TRANSITIONS</a></li>
+            <li><a href="#formulaire">FORMULAIRES</a></li>
+            <li><a href="#plugin">PLUGINS</a></li>
+        </ul>
+    </nav>
+
+    <a id="buttonup" href="#button"><i class="fas fa-angle-up"></i></a>
+
+
+    <section style="margin-top:75px">
+        <h1 id="button">HTML et CSS</h1>
+        <hr>
+
+        <h2>Notations short-hand</h2>
+        <ul>
+            <li>font = style weight size line-height family</li>
+            <li>background = color image repeat attachement position</li>
+            <li>margin padding border = sens horaire</li>
+        </ul>
+
+        <h2>Sélecteurs CSS</h2>
+
+        <ul>
+            <li>* : pour tout sélectionner </li>
+            <li>, : pour ajouter un autre élément</li>
+            <li>plusieurs éléments : pour cibler le dernier</li>
+            <li>+ : pour cibler aussi l'élément suivant de meme niveau</li>
+            <li>&gt; : permet de sélectionner tous les éléments childs désignés d'un élément</li>
+            <li>[] : permet de séléctionner les attributs avec leur valeurs ex: [class="para"]</li>
+        </ul>
+
+        <h2>Speudo classes</h2>
+        <!-- elles commencent toujours par un : -->
+
+        <ul>
+            <li>:link : lien non visité</li>
+            <li>:visited : lien visité</li>
+            <li>:hover : au survol de la souris</li>
+            <li>:nth-child : premier enfant d'un élément</li>
+            <li>:last-child : dernier enfant d'un élément</li>
+            <li>:first-of-type : premier type d'élément</li>
+            <li>:last-of-type : dernier type d'élément</li>
+            <li>:nth-child() : énième enfant d'un élément (valeurs possible: odd:impair even:pair ou chiffre nombre</li>
+        </ul>
+
+        <p>Un lien vers site de <a id="siteskate" href="http://youtube.com" target="blank">skate</a></p>
+
+        <h2>Speudo Éléments</h2>
+        <!-- elles commencent toujours par un :: -->
+
+        <ul>
+            <li>::first-letter : première lettre /!\ appliquable qu'à un élément de type block</li>
+            <li>::first-line : première ligne</li>
+            <li>::selection : sélection de la souris (double click, ou sélection manuelle)</li>
+            <li>::before : avant</li>
+            <li>::after : après</li>
+        </ul>
+
+        <div class="speudoelement">
+            <p>Je suis ici et la-bas <br> en meme temps</p>
+            <p>J'irai demain</p>
+            <p>Tu fais quoi samedi soir ?</p>
+        </div>
+
+        <p>Faut que j'achète une moto</p>
+
+        <div class="speudoelement1">
+            <p>Acheter un skate</p>
+            <p>Aller au cinémas</p>
+            <p>Se couper les cheveux</p>
+        </div>
+
+        <p>Les belles fleurs</p>
+
+
+
+        <!--PERSONNALISATION DE TEXTE-->
+
+
+        <h2>Personnalisation sur une partie de texte</h2>
+
+
+        <p>Exemple de la balise <em>em</em> (insister sur une partie de texte)</p>
+
+        <p>Exemple de la balise <strong>strong</strong></p>
+
+        <p>Exemple de la balise <mark>mark</mark></p>
+
+        <P>Ci-dessous la propriété <strong>text-transform</strong></P>
+        <p id="uppercase">Voici un texte avec l'utilisation de l'<em>uppercase</em></p>
+
+        <p>Ci-dessous la propriété <strong>text-decoration</strong></p>
+        <p id="underline">Voici un texte avec l'utilisation de l'<em>underline</em></p>
+
+        <p>Ci-dessous la propriété <strong>text-shadow</strong></p>
+        <p id="shadow">Voici un texte avec l'utilisation du <em>text-shadow</em></p>
+        <p id="shadowi">Voici un texte avec l'utilisation du <em>text-shadow</em></p>
+
+        <p>Ci-dessous la propriété <strong>text-indent</strong></p>
+        <p id="textindent">Voici un texte avec l'utilisation du <em>text-indent</em></p>
+
+
+        <!-- horizontal(droite), vertical(bas), propagation et couleur, pour inversion utiliser valeur négative -->
+
+        <p>Ci-dessous la propriété <strong>line-height</strong></p>
+
+        <p id="lineheight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, assumenda odio delectus
+            exercitationem dicta soluta sint expedita quis debitis aliquam voluptatem minima, dolorum autem quia, nisi
+            nihil. Explicabo, quia itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            reprehenderit dolorum illo assumenda quos veniam dicta, atque deserunt rem natus nemo beatae. Laboriosam
+            labore fuga quo saepe, cupiditate non alias?</p>
+
+        <p>Ci-dessous la propriété <em>letter-spacing</em></p>
+
+        <p id="letterspacing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi, accusamus
+            consectetur enim beatae odit nulla sed ipsum, quia earum commodi! Excepturi cupiditate natus animi
+            perferendis adipisci nam ipsum rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            sapiente sunt quia temporibus corporis ipsum aperiam, amet quod neque, dolore molestias natus assumenda
+            dolorum. Eum tempore nihil necessitatibus pariatur ut!</p>
+
+        <!-- même chose pour word-spacing (mots) -->
+
+
+        <!--LISTES-->
+
+
+        <h2>Types de listes</h2>
+
+        <ul>
+            <!-- ul: Pour indiquer une ouverture de liste non ordonner-->
+
+            <li>pomme de terres</li><!-- li Pour indiquer les points de listes -->
+            <li>oignons</li>
+            <li>huile d'olive</li>
+        </ul>
+
+        <ol type="I">
+            <!--ol: Pour indiquer une ouverture de liste ordonner, different attribut existe pour choisir le type de numérotation-->
+
+            <li>pomme de terre</li>
+            <li>oignon</li>
+            <li>huile d'olive</li>
+        </ol>
+
+        <ol start="3" type="I">
+            <!--start: pour choisir le début de la numérotation-->
+
+            <li>pomme de terre</li>
+            <li>oignon</li>
+            <li>huile d'olive</li>
+        </ol>
+
+        <ol reversed type="I">
+            <!--reversed: pour inversion de la numérotation-->
+
+            <li>pomme de terre</li>
+            <li>oignon</li>
+            <li>huile d'olive</li>
+        </ol>
+
+        <ol id="listeessai">
+            <!--reversed: pour inversion de la numérotation-->
+
+            <li>pomme de terre</li>
+            <li>oignon</li>
+            <li>huile d'olive</li>
+        </ol>
+
+        <!--http://www.startyourdev.com/html/tag-html-balise-ol-->
+
+
+
+        <!-- ANCRE ET LIENS -->
+
+        <!--#: pour ancre départ-->
+        <!--id: + valeur pour ancre d'arriver-->
+
+        <h2>Ancres et liens</h2>
+
+        <p><a href="exemple_page1.html" target="blank"> vers la page 1</a></p>
+        <p><a href="../exemple_page2.html" target="_blank"> vers la page 2</a></p>
+
+        <!-- / : pour entrer dans un meme niveau (répétable)-->
+        <!-- ../ : pour sortir vers dossier parent (répétable) -->
+
+
+        <p><a href="#p">Essai</a> ancre</p>
+        <p>Se rendre <a href="http://www.swtor.com">ici</a> pour voir la page</p>
+        <p>Se rendre <a href="http://www.swtor.com" target="blank">ici</a> (dans un nouvel onglet)</p>
+
+
+        <!--ECHAPEMENT-->
+
+
+        <h2>Echapement</h2>
+
+        <!-- &lt;: chevron ouvrant &gt;:chevron fermant-->
+        <!--&nbs;: pour faire un espace-->
+
+        <p style="color: white">&lt;h1&gt;&lt;/h1&gt;</p>
+        <P>Pour &nbsp;&nbsp; faire un titre principal la balise &lt;h1&gt; est nécessaire</P>
+
+
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+
+        <a id="p">
+            <p>destination de l'ancre #p</p>
+        </a>
+
+        <p>M'envoyer un <a href="mailto:cissesnoop@hotmail.fr">mail</a></p>
+
+        <p><a href="pdf/cv_canva.pdf" target="blank">telechargement</a>
+        </p>
+
+
+        <!--ZONING-->
+
+
+        <h2 id="zoning">Zoning</h2>
+
+        <h3>Display</h3>
+
+
+        <p>Ci-dessous la propriété <strong>inline</strong></p>
+
+        <p class="inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dignissimos sed pariatur,
+            nisi autem alias sint non corrupti asperiores facilis incidunt cumque iste consequatur dolorem
+            cupiditate necessitatibus deserunt consectetur perferendis?</p>
+
+        <p class="inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dignissimos sed pariatur,
+            nisi autem alias sint non corrupti asperiores facilis incidunt cumque iste consequatur dolorem
+            cupiditate necessitatibus deserunt consectetur perferendis?</p>
+
+        <p>Ci-dessous la propriété <strong>inline-block</strong></p>
+
+        <p class="inlineblock">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dignissimos sed
+            pariatur, nisi autem alias sint non corrupti asperiores facilis incidunt cumque iste consequatur dolorem
+            cupiditate necessitatibus deserunt consectetur perferendis?</p>
+
+        <p class="inlineblock">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dignissimos sed
+            pariatur, nisi autem alias sint non corrupti asperiores facilis incidunt cumque iste consequatur dolorem
+            cupiditate necessitatibus deserunt consectetur perferendis?</p>
+
+
+        <h3>Position</h3>
+
+        <h4>Absolute et float</h4>
+
+
+        <div class="div1">
+
+            <p id="pimg">insertion img et boite en position absolute =></p>
+            <!--la position absolute permet de déplacer l'élément ou l'on souhaite par rappot à son élément parent-->
+
+            <img id="img" src="img/moon.jpg" alt="image de lune">
+
+            <div class="boite1">
+
+                <h1>boite</h1>
+                <p>LOremfhmfhmqsjhfm FHJeùjfh FJH%GJ gh%KJGHùjk rgthzùjkgh</p>
+            </div>
+        </div>
+
+
+        <div class="div2">
+
+            <p id="pimg2">insertion img avec le float</p>
+
+            <img id="img2" src="img/moon.jpg" alt="image d'une lune">
+
+            <div class="boite2">
+                <h1>boite</h1>
+                <p>LOremfhmfhmqsjhfm FHJeùjfh FJH%GJ gh%KJGHùjk rgthzùjkgh<br></p>
+                <p>rfhgMZ<br></p>
+                <p>fh</p>
+                <p>SDGFHGFDQHJGQERK KARK AMsqfd</p>
+            </div>
+        </div>
+
+        <h4>Insertion image</h4>
+
+        <div class="backgroundfixe"></div>
+
+        <div class="backgroundposition"></div>
+
+        <div class="backgroundmany"></div>
+
+        <figure>
+            <!-- figure: permet de dire à la page web que son contenu est utile à la compréhension du site -->
+            <img id="imgcountry" src="img/countryside.jpg" alt="">
+            <figcaption style="margin:auto;text-align:center;width:30%;">allée des chemins</figcaption>
+        </figure>
+
+
+
+        <h4>Utilisation du clear: both</h4>
+
+        <div class="divfloat">
+            <div class="violet">1</div>
+            <div class="vert">2</div>
+            <div class="violet">3</div>
+            <div class="vert">4</div>
+            <div class="vert clear">5</div>
+            <div class="violet">6</div>
+            <div class="vert clear">7</div>
+        </div>
+
+        <!--Le float place les éléments les un a la gauche de l'autre annulant les types block-->
+
+        <h4>Display Flex</h4>
+
+        <div class="flex">
+            <div class="flex1"></div>
+            <div class="flex2"></div>
+            <div class="flex3"></div>
+        </div>
+
+        <div class="para">
+            <div class="pl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum praesentium beatae debitis
+                vero,
+                mollitia ullam veritatis illo blanditiis fugiat nam sed exercitationem unde iure sequi velit
+                repellat
+                minus
+                iste?
+            </div>
+            <div class="pl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum praesentium beatae debitis
+                vero,
+                mollitia ullam veritatis illo blanditiis fugiat nam sed exercitationem unde iure sequi velit
+                repellat
+                minus
+                iste?
+            </div>
+            <div class="pl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum praesentium beatae debitis
+                vero,
+                mollitia ullam veritatis illo blanditiis fugiat nam sed exercitationem unde iure sequi velit
+                repellat
+                minus
+                iste?
+            </div>
+            <div class="pl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum praesentium beatae debitis
+                vero,
+                mollitia ullam veritatis illo blanditiis fugiat nam sed exercitationem unde iure sequi velit
+                repellat
+                minus
+                iste?
+            </div>
+        </div>
+        <!--Le display flex permet d'ajuster automatiquement les espaces entres les éléments-->
+
+        <h2>Sprites</h2>
+
+
+        <div class="backgroundd">
+            <div class="zdh"></div>
+            <div class="mnu"></div>
+            <div class="sprits">
+                <div class="hg">
+                    <div class="rondimg"></div>
+                </div>
+                <div class="hd">
+                    <div class="rond"></div>
+                </div>
+                <div class="bg">
+                    <div class="rond1"></div>
+                </div>
+                <div class="bd">
+                    <div class="rond2"></div>
+                </div>
+            </div>
+            <div class="ftr"></div>
+        </div>
+
+
+        <!-- TABLEAU -->
+
+        <h2>Tableau</h2>
+
+        <h3>Ciblage avec :nth-child / :last-child / :first-child / :first-of-type / :last-of-type</h3>
+
+        <div class="lignetableau">
+
+            <table id="premier">
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Sport</th>
+                </tr>
+                <tr>
+                    <td>Traore</td>
+                    <td>Mehdi</td>
+                    <td>Skate</td>
+                </tr>
+                <tr id="tdred">
+                    <td>Narrkan</td>
+                    <td>Sai</td>
+                    <td>Gamer</td>
+                </tr>
+            </table>
+
+            <table id="deuxieme">
+                <thead>
+                    <tr>
+                        <th>Mois</th>
+                        <th>Dépense</th>
+                        <th>Épargne</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mars</td>
+                        <td>360</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td>Avril</td>
+                        <td>360</td>
+                        <td>450</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Totals</td>
+                        <td>720</td>
+                        <td>1050</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </div>
+
+
+        <h3>Colspan Rowspan et Caption</h3>
+
+        <table id="troisieme">
+            <caption>tableau 3</caption>
+            <!--caption:  affiche une légende et se place juste après l'élément table-->
+            <tr>
+                <th colspan="3">Prenom</th>
+                <!--Colspan: pour fusion de colonnes-->
+                <th colspan="5">Adresse email</th>
+            </tr>
+            <tr>
+                <td colspan="2">Mehdi</td>
+                <td>Moon</td>
+                <td>traore.mehdi@hotmail.fr</td>
+                <td>snoop@gotmail.fr</td>
+                <td>snoop@gotmail.fr</td>
+                <td>snoop@gotmail.fr</td>
+                <td>snoop@gotmail.fr</td>
+            </tr>
+            <tr>
+                <td>Narrkan</td>
+                <td>narrk</td>
+                <td>kansai</td>
+                <td colspan="5">Narrkan@gmail.com</td>
+            </tr>
+        </table>
+
+        <table id="quatrieme">
+            <caption>tableau 4</caption>
+            <tr>
+                <th>Prenom</th>
+                <th>Adresse email</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Mehdi</td>
+                <!--rowspan: pour fusion de lignes-->
+                <td>Moon@h.com</td>
+            </tr>
+            <tr>
+                <td>narrk@jk.com</td>
+            </tr>
+            <tr>
+                <td>Moon</td>
+                <td>Moon@gtr.com</td>
+            </tr>
+        </table>
+
+
+        <!--MEDIAS-->
+
+        <h2 id="h2clear">Medias</h2>
+
+        <div class="media">
+            <!--attribut autoplay pour jouer en auto, mute: pour taire le son, loop: pour répéter et controls: pour les afficher-->
+
+
+            <audio controls src="audio/bob-james_nautilus.mp3"></audio>
+
+            <video controls poster="img/battlefront.jpg">non
+                pris
+                en
+                charge par votre navigateur
+            </video>
+        </div>
+
+        <h3>Iframe</h3>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1553640745966!6m8!1m7!1s76nzAwcNsv5wzXmB7ikdZw!2m2!1d43.49373834224091!2d-1.472469318980992!3f267.54947!4f0!5f0.7820865974627469"
+            width="600" height="450" allowfullscreen></iframe>
+
+
+        <!--TRANSITIONS DEGRADES ANIMATIONS-->
+
+
+        <h2 id="transition">Transition</h2>
+
+        <div class="transition">
+            <p>un premier para</p>
+            <p>un deuxième para</p>
+            <p>un dernier para</p>
+        </div>
+
+        <h2>Animation</h2>
+        <p>Valeur animation-timing-function :</p>
+        <ul>
+            <li>linear : meme vitesse du début à la fin</li>
+            <li>ease : lent, rapide, lent</li>
+            <li>ease-in : début lent</li>
+            <li>ease-out : fin lente</li>
+            <li>ease-in-out : début et fin lente</li>
+        </ul>
+
+        <div class="animation"></div>
+
+        <h2 style="margin:320px auto 0;">Dégradé</h2>
+
+        <div class="degrade"></div>
+
+
+        <!--FORMULAIRE-->
+
+
+        <h2 id="formulaire">Formulaires</h2>
+
+        <p>Types d'éléménts</p>
+        <ul>
+            <li>input : sert a entrer une information</li>
+            <li>label : description de l'information</li>
+            <li>textarea : texte sur plusieurs lignes</li>
+            <li>optgroup : permet catégoriser une liste</li>
+            <li>option : point de liste</li>
+            <li>fieldset : sert à catégoriser l'élément</li>
+            <li>legend : sert à nommer la catégorie de l'élément</li>
+        </ul>
+        <p>Type d'inputs</p>
+        <ul>
+            <li>text : champs de caractère sur une seule ligne</li>
+            <li>radio : pour séléctionner un seul choix</li>
+            <li>checkbox : pour séléctionner plusieurs choix</li>
+            <li>number : pour entrer un nombre</li>
+            <li>email : pour entrer une adresse mail</li>
+            <li>url : pour entrer une adrese internet</li>
+            <li>date : pour entrer une date</li>
+            <li>password : Pour entrer un mot de passe</li>
+            <li>tel : numéro de téléphone</li>
+            <li>image : choisir une image (src)</li>
+            <li>reset : reset du formulaire par défault</li>
+        </ul>
+        <p>Types d'attributs</p>
+        <ul>
+            <li>maxlength : nombre maximum de caractère autoriser</li>
+            <li>minlength : nombre minimum de caractère autoriser</li>
+            <li>name : pour faire le lien avec php</li>
+            <li>for(label) / id(input) : sert à mettre en lien le label et l'input</li>
+            <li>autocomplete : remplissage du champs automatique ou non / on off</li>
+            <li>autofocus : focus sur le champ a l'affichage du formulaire</li>
+            <li>required : champs obligatoire à l'envoi du formulaire</li>
+            <li>checked : présélection par défault(checkbox)</li>
+            <li>selected : présélection par défault(list)</li>
+            <li>placeholder : indication d'information</li>
+        </ul>
+
+        <form method="POST">
+            <!-- get :  envoi de donné visible et limité
+        post : envoi de donné non visible et ilimité
+        action : servira à traiter les donnés en php
+        name : servira à traiter les donnés en php -->
+            <fieldset>
+                <legend>ID</legend>
+
+                <label for="prénom">Entre ton Prénom</label>
+                <input type="text" id="prénom" name="prénom" autocomplete="on"><br><br>
+
+                <label for="naissance">Entre ta date de naissance</label>
+                <input type="date" id="naissance" name="naissance"><br><br>
+
+                Femme ou homme ?<br>
+                <!--radio pour selectionner un seul choix-->
+                <input type="radio" id="femme" name="sexe" value="femme">
+                <label for="femme">Femme</label><br>
+                <input type="radio" id="homme" name="sexe" value="homme">
+                <label for="homme">Homme</label>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Sport</legend>
+
+                Quel sport pratique tu ?<br>
+                <!--checkbox pour choix multiple-->
+                <input type="checkbox" id="basket" name="sport" value="basket">
+                <label for="basket">Basket</label><br>
+                <input type="checkbox" name="sport" id="natation" value="natation">
+                <label for="natation">Natation</label><br>
+                <input type="checkbox" name="sport" id="autre" value="autre">
+                <label for="autre">Autre</label>
+            </fieldset><br>
+
+
+            <fieldset>
+                <legend>Contact</legend>
+
+                <label for="tel">Entre ton tel</label>
+                <input type="tel" id="tel" name="tel" autocomplete="on" maxlength="10"><br><br>
+
+                <label for="email">Entrer votre email</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="url">Adresse de ton site web</label>
+                <input type="url" id="url" name="url">
+            </fieldset><br>
+
+
+
+            <fieldset>
+                <legend>Présentation</legend>
+                <label for="description">P'tite présentation de toi</label>
+                <textarea id="description" name="description"></textarea>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Jeux</legend>
+
+                jeux favoris <br>
+                <!--liste déroulante-->
+                <select name="jeux" id="jeux">
+                    <optgroup label="PUISSANCE">
+                        <!-- optgroup pour catégoriser la liste-->
+                        <option value="God Of War">God Of War</option>
+                    </optgroup>
+                    <optgroup label="ESPIONAGE">
+                        <option value="Splinter Cell">Slinter Cell</option>
+                    </optgroup>
+                    <optgroup label="MONDE OUVERT">
+                        <option value="GTA">GTA</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sécurité</legend>
+
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="mdp" id="mdp">
+            </fieldset><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <!-- RESPONSIVE -->
+
+        <H2>Responsive</H2>
+
+        <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+
+        <ul>
+            <li>viewport : taille d'affichage fenêtre visiteur</li>
+            <li>content : largeur = largeur de l'apareil</li>
+            <li>initial-scale = 1.0 : cela fait en sorte que le contenu remplisse la taille d'écran du visiteur</li>
+        </ul>
+
+        <h3>Media Queries</h3>
+
+        <div class="divq1"></div>
+        <div class="divq2"></div>
+        <div class="divq3"></div>
+        <div class="divq4"></div>
+
+
+
+
+        <h2 id="plugin">Plugins</h2>
+
+        <div class="" style="width:340px;margin:auto">
+            <div class="fb-page" data-href="https://www.facebook.com/Ferrari/" data-width="340px"
+                data-hide-cover="false" data-show-facepile="true">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="fb-root"></div>
+        <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
