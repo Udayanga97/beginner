@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Les Conditions</title>
-    <link rel="stylesheet" href="css/exemple.css">
+    <link rel="stylesheet" href="../css/exemple.css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
 
     <?php
         $date_actuelle = new DateTime();// pour afficher la date actuelle
-        $date_anniversaire = new DateTime("22-11-2020");// pour afficher la date voulue /!\ préciser le format dans l'echo
+        $date_anniversaire = new DateTime("22-11-1989");// pour afficher la date voulue /!\ préciser le format dans l'echo
         $heure_actuelle = date("H:i");// pour afficher l'heure actuelle
         $heure_choisie = date("10:23");// pour afficher l'heure voulue
         

@@ -109,6 +109,34 @@
             array('Roadster', 800, 'YAMAHA')
         );
 
+        $motoss = array(
+
+            $sbk = array(
+                array(1000,750,500),
+
+                $klo = array(
+                    array("yamaha","ducati","HONDA"),
+                    array("bleu","rouge","orange")
+                )
+                
+            ),
+            $motocross = array(
+                array(450,250,125),
+                array("husqvarna","yamaha","KTM")
+            )
+        );
+
+        echo $motoss[1][1][2];
+        echo '<br>';
+        echo '<pre>';
+        print_r($motoss);
+        echo '<br>';
+        echo '</pre>';
+        echo $motoss[0][1][0][2].'<br>';
+
+            
+        
+
        
         echo $motos[0][0]. ' de '. $motos[0][1]. ' cm3'. ' de chez '. $motos[0][2]. '<br>';
         echo $motos[1][0]. ' de '. $motos[1][1]. ' cm3'. ' de chez '. $motos[1][2]. '<br>';
