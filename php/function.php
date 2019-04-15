@@ -98,15 +98,7 @@
         echo implode(' ',$tb2ch).'<br>';// le séparateur peut être un caractère
 
 
-
-        
-
-        
-
-
-
-
-    ?>
+?>
     
 </body>
 </html>
